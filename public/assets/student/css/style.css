@@ -1,0 +1,178 @@
+.errorColor {
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    color: #FF0000;
+}
+.profile {
+    max-width: 590px;
+    width: 100%;
+    margin: 0 auto;
+    border: 1px solid #F5F5F5;
+}
+
+.background {
+    background: #C8F5D6;
+    height: 145px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.profileAvtar {
+    width: 165px;
+    margin: auto;
+    height: 165px;
+    background: #F5F5F5;
+    border: 7px solid #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: relative;
+    top: 50px;
+
+}
+
+.picture {
+    margin-top: 26px;
+    padding: 70px 70px 28px 70px;
+}
+
+.picture h3 {
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 22px;
+    color: #000000;
+    text-align: center;
+}
+
+.feild input {
+    width: 100%;
+    background: #FFFFFF;
+    border: 1px solid #A9A9A9;
+    border-radius: 4px;
+    height: 48px;
+}
+
+.feild label {
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 17px;
+    color: #000000;
+}
+
+.Category p {
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 17px;
+    width: 100%;
+    color: #000000;
+}
+
+.Exam p{
+    margin-top: 30px;
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 17px;
+    color: #000000;
+}
+.radio{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Exam label {
+    margin-left: 18px;
+}
+
+.upload {
+    padding: 20px 16px;
+    margin-top: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #F2F7FC;
+    border: 1px solid #DBEAF9;
+    border-radius: 4px;
+}
+
+.upload p {
+    margin: 0;
+
+}
+input[type="file" i] {
+    cursor: pointer;
+}
+
+.fileupload {
+    display: flex;
+    gap: 16px;
+    width: 50%;
+}
+
+.fileupload p {
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 17px;
+    color: #4D5A69;
+}
+
+.uploadfile {
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 13px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+    color: #567FBD;
+    margin: 0;
+}
+
+.submitbtn {
+    width: 100%;
+    padding: 18px 0;
+    margin-top: 28px;
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 20px;
+    background: #9D4EDD;
+    border: none;
+    border-radius: 4px;
+    color: rgba(255, 255, 255, 0.9);
+}
+.upload input{
+    /* width: 100px; */
+}
+
+@media (max-width:512px) {
+        .fileupload p {
+            font-family: 'Archivo';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 17px;
+            color: #4D5A69;
+        }
+        .picture {
+            margin-top: 26px;
+            padding: 46px 28px 28px 28px ;
+        }
+}

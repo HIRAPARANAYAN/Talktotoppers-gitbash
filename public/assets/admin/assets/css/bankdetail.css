@@ -1,0 +1,288 @@
+#main {
+    padding: 42px 68px 32px 32px;
+    transition: all 0.3s;
+}
+
+@media (max-width: 1199px) {
+    #main {
+        padding: 20px;
+    }
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 320px;
+    z-index: 996;
+    transition: all 0.3s;
+    padding: 20px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #aab7cf transparent;
+    box-shadow: 0px 0px 20px rgba(1, 41, 112, 0.1);
+    background: #FAF1FF;
+    ;
+}
+
+@media (max-width: 1199px) {
+    .sidebar {
+        left: -320px;
+    }
+}
+
+.sidebar::-webkit-scrollbar {
+    width: 5px;
+    height: 8px;
+    background-color: #fff;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+    background-color: #aab7cf;
+}
+
+@media (min-width: 1200px) {
+
+    #main,
+    #footer {
+        margin-left: 320px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .toggle-sidebar .sidebar {
+        left: 0;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .toggle-sidebar #main,
+    .toggle-sidebar #footer {
+        margin-left: 0;
+    }
+
+    .toggle-sidebar .sidebar {
+        left: -320px;
+    }
+}
+
+.sidebar-nav {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.sidebar-nav .nav-item {
+    margin-bottom: 32px;
+}
+
+.sidebar-nav .nav-item a img {
+    margin-right: 12px;
+}
+
+.sidebar-nav .nav-heading {
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #899bbd;
+    font-weight: 600;
+    margin: 10px 0 5px 15px;
+}
+
+.sidebar-nav .nav-link {
+    color: #8127B9;
+    display: flex;
+    align-items: center;
+    transition: 0.3;
+    padding: 12px 19px;
+    border-radius: 4px;
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 26px;
+}
+
+.sidebar-nav .nav-link i {
+    font-size: 16px;
+    margin-right: 10px;
+    color: #4154f1;
+}
+
+.sidebar-nav .nav-link.collapsed {
+    color: #8127B9;
+}
+
+.sidebar-nav .nav-link.collapsed i {
+    color: #899bbd;
+}
+
+.sidebar-nav .nav-link:hover {
+    background: #FCF8FF;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 24px;
+    color: #8127B9;
+    border-left: 8px solid #8127B9;
+}
+
+.logout {
+    list-style-type: none;
+    padding: 0;
+}
+
+.logout li:last-child {
+    background: #E7E2FF;
+    border-radius: 4px;
+    padding: 10px 62px;
+    margin-top: 42px;
+
+}
+
+.logout li a span {
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 26px;
+    color: #4A35AB;
+    margin-left: 12px;
+}
+
+
+.sidebartabs {
+    height: calc(100% - 90px);
+}
+
+.pagetitle {
+    margin-bottom: 42px;
+}
+
+table {
+    background: #FAF1FF;
+    border-radius: 8px 8px 0px 0px;
+}
+
+thead th:first-child {
+    border-radius: 8px 0px 8px 0px !important;
+}
+
+tbody {
+    background: #FFFFFF;
+    border: 1px solid #E7E7E7;
+    border-radius: 0px 0px 8px 8px;
+    padding: 16px;
+}
+
+tr,
+td {
+    text-align: start;
+}
+td{
+    padding: 18px 16px !important;
+}
+
+th {
+    padding: 0.5rem 1rem !important;
+}
+
+.revenue {
+}
+
+.Totalrevenue {
+    max-width: 452px;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.revenueheader {
+    padding: 28px;
+    background: radial-gradient(50% 962.88% at 50% 50%, #B338FF 0%, #9929DF 100%);
+    border-radius: 8px;
+    background-image: url(../../img/revenueheader.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 27px;
+
+}
+
+.revenueheader h3 {
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 35px;
+    margin: 0 0 11px 0;
+    color: #FFFFFF;
+}
+
+.revenueheader p {
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 17px;
+    margin: 0;
+    color: #FFFFFF;
+}
+
+.account {}
+
+.radio1 {
+    width: 24px;
+    height: 24px
+}
+
+.account form p {
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    margin: 0;
+    line-height: 26px;
+    color: #545454;
+}
+
+input {
+    padding: 20px 16px;
+    background: #F7F7F7;
+    border-radius: 4px;
+    border: none;
+    width: 100%;
+}
+
+label {
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 17px;
+    margin-bottom: 12px;
+    color: #545454;
+}
+.calandersm{
+    display: none;
+}
+.notification {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+
+}
+
+@media (max-width:768px) {
+    .calandersm{
+        display:block
+    }
+}

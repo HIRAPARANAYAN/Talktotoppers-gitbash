@@ -1,0 +1,365 @@
+#main {
+    padding: 42px 68px 32px 32px;
+    transition: all 0.3s;
+}
+
+@media (max-width: 1199px) {
+    #main {
+        padding: 20px;
+    }
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 320px;
+    z-index: 996;
+    transition: all 0.3s;
+    padding: 20px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #aab7cf transparent;
+    box-shadow: 0px 0px 20px rgba(1, 41, 112, 0.1);
+    background: #FAF1FF;
+    ;
+}
+
+@media (max-width: 1199px) {
+    .sidebar {
+        left: -320px;
+    }
+}
+
+.sidebar::-webkit-scrollbar {
+    width: 5px;
+    height: 8px;
+    background-color: #fff;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+    background-color: #aab7cf;
+}
+
+@media (min-width: 1200px) {
+
+    #main,
+    #footer {
+        margin-left: 320px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .toggle-sidebar .sidebar {
+        left: 0;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .toggle-sidebar #main,
+    .toggle-sidebar #footer {
+        margin-left: 0;
+    }
+
+    .toggle-sidebar .sidebar {
+        left: -320px;
+    }
+}
+
+.sidebar-nav {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.sidebar-nav .nav-item {
+    margin-bottom: 32px;
+}
+
+.sidebar-nav .nav-item a img {
+    margin-right: 12px;
+}
+
+.sidebar-nav .nav-heading {
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #899bbd;
+    font-weight: 600;
+    margin: 10px 0 5px 15px;
+}
+
+.sidebar-nav .nav-link {
+    color: #8127B9;
+    display: flex;
+    align-items: center;
+    transition: 0.3;
+    padding: 12px 19px;
+    border-radius: 4px;
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 26px;
+}
+
+.sidebar-nav .nav-link i {
+    font-size: 16px;
+    margin-right: 10px;
+    color: #4154f1;
+}
+
+.sidebar-nav .nav-link.collapsed {
+    color: #8127B9;
+}
+
+.sidebar-nav .nav-link.collapsed i {
+    color: #899bbd;
+}
+
+.sidebar-nav .nav-link:hover {
+    background: #FCF8FF;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 24px;
+    color: #8127B9;
+    border-left: 8px solid #8127B9;
+}
+
+.logout {
+    list-style-type: none;
+    padding: 0;
+}
+
+.logout li:last-child {
+    background: #E7E2FF;
+    border-radius: 4px;
+    padding: 10px 62px;
+    margin-top: 42px;
+
+}
+
+.logout li a span {
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 26px;
+    color: #4A35AB;
+    margin-left: 12px;
+}
+
+
+.sidebartabs {
+    height: calc(100% - 90px);
+}
+
+.profileheader {
+    background: radial-gradient(50% 10318.21% at 50% 50%, #D289FF 0%, #A874C8 100%);
+    border-radius: 8px;
+    padding: 29px 32px;
+    margin-top: 41px;
+    position: relative;
+}
+
+.searchBar {
+    max-width: 512px;
+    width: 100%;
+    background: #FAF1FF;
+    border-radius: 40px;
+    padding: 17px 31px;
+    display: block;
+}
+
+.searchBar input {
+    width: 512px;
+    border: none;
+    background-color: transparent;
+    outline: none;
+}
+
+.notification {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+
+}
+table{
+    border:  1px solid gray;
+}
+table thead{
+    background: #FAF1FF;
+    border-radius: 4px 4px 0px 0px;
+    /* color: white; */
+}
+th{
+    padding: 14px 8px !important; 
+}
+ td{
+    vertical-align: middle !important;
+}
+
+@media (max-width:1199px) {
+
+    .searchBar {
+        display: none !important;
+    }
+
+}
+
+.requestTab {
+    background: #FAF1FF;
+    border-radius: 4px 4px 0px 0px;
+    padding: 20px 0 14px 0;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    color: #8127B9 !important;
+    background-color: transparent;
+    border-bottom: 4px solid #8127B9;
+}
+
+.nav-pills .nav-link {
+    background: 0 0;
+    border: 0;
+    border-radius: unset;
+}
+
+.nav-pills .nav-link {
+    margin: 0 0 0 5px;
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 26px;
+    color: #8127B9;
+}
+
+.Raisetocket form label {
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 26px;
+    margin: 0 0 12px 0;
+    color: #000000;
+}
+
+.Raisetocket form label span {
+    color: red;
+}
+
+.Raisetocket form input {
+    width: 100%;
+    height: 66px;
+    background: #FAFAFA;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    padding: 14px;
+
+}
+
+.Raisetocket form textarea {
+    width: 100%;
+    background: #FAFAFA;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    padding: 14px;
+
+}
+
+.sendrequest {
+    margin: 36px 0 0 0;
+}
+
+.sendrequest button {
+    padding: 8px;
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 22px;
+    text-align: center;
+    color: #54B23C;
+    background: #FFFFFF;
+    border: 1px solid #54B23C;
+}
+
+.Raiseticketbtn {
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    border: none;
+    outline: none;
+    margin: 36px 0 0 0;
+    line-height: 35px;
+    padding: 12px;
+    color: #FFFFFF;
+    background: #8127B9;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.request {
+    padding: 12px 16px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 8px rgba(203, 203, 203, 0.25);
+    border-radius: 4px;
+}
+.Approval{
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 6px 16px;
+    border-radius: 6px;
+
+}   
+.reject{
+    background-color: red;
+    padding: 6px 16px;
+    border-radius: 6px;
+    color: white;
+    border: none;
+
+}
+.rejectbtn , .approvebtn{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+@media (max-width:768px) {
+
+    .sendrequest {
+        flex-direction: column;
+        width: 100%;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .nav-pills .nav-link {
+        font-size: 17px;
+    }
+
+    .nav-pills .nav-link.active,
+    .nav-pills .show>.nav-link {
+        color: #8127B9 !important;
+        background-color: transparent;
+        border-bottom: 2px solid #8127B9;
+    }
+
+}

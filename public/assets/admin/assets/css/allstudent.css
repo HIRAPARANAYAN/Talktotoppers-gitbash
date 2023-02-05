@@ -1,0 +1,245 @@
+#main {
+    padding: 42px 68px 32px 32px;
+    transition: all 0.3s;
+}
+
+@media (max-width: 1199px) {
+    #main {
+        padding: 20px;
+    }
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 320px;
+    z-index: 996;
+    transition: all 0.3s;
+    padding: 20px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #aab7cf transparent;
+    box-shadow: 0px 0px 20px rgba(1, 41, 112, 0.1);
+    background: #FAF1FF;
+    ;
+}
+
+@media (max-width: 1199px) {
+    .sidebar {
+        left: -320px;
+    }
+}
+
+.sidebar::-webkit-scrollbar {
+    width: 5px;
+    height: 8px;
+    background-color: #fff;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+    background-color: #aab7cf;
+}
+
+@media (min-width: 1200px) {
+
+    #main,
+    #footer {
+        margin-left: 320px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .toggle-sidebar .sidebar {
+        left: 0;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .toggle-sidebar #main,
+    .toggle-sidebar #footer {
+        margin-left: 0;
+    }
+
+    .toggle-sidebar .sidebar {
+        left: -320px;
+    }
+}
+
+.sidebar-nav {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.sidebar-nav .nav-item {
+    margin-bottom: 32px;
+}
+
+.sidebar-nav .nav-item a img {
+    margin-right: 12px;
+}
+
+.sidebar-nav .nav-heading {
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #899bbd;
+    font-weight: 600;
+    margin: 10px 0 5px 15px;
+}
+
+.sidebar-nav .nav-link {
+    color: #8127B9;
+    display: flex;
+    align-items: center;
+    transition: 0.3;
+    padding: 12px 19px;
+    border-radius: 4px;
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 26px;
+}
+
+.sidebar-nav .nav-link i {
+    font-size: 16px;
+    margin-right: 10px;
+    color: #4154f1;
+}
+
+.sidebar-nav .nav-link.collapsed {
+    color: #8127B9;
+}
+
+.sidebar-nav .nav-link.collapsed i {
+    color: #899bbd;
+}
+
+.sidebar-nav .nav-link:hover {
+    background: #FCF8FF;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 24px;
+    color: #8127B9;
+    border-left: 8px solid #8127B9;
+}
+
+.logout {
+    list-style-type: none;
+    padding: 0;
+}
+
+.logout li:last-child {
+    background: #E7E2FF;
+    border-radius: 4px;
+    padding: 10px 62px;
+    margin-top: 42px;
+
+}
+
+.logout li a span {
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 26px;
+    color: #4A35AB;
+    margin-left: 12px;
+}
+
+
+.sidebartabs {
+    height: calc(100% - 90px);
+}
+
+.searchBar {
+    max-width: 512px;
+    width: 100%;
+    background: #FAF1FF;
+    border-radius: 40px;
+    padding: 17px 31px;
+    display: block;
+}
+
+.searchBar input {
+    width: 512px;
+    border: none;
+    background-color: transparent;
+    outline: none;
+}
+
+@media (max-width:1199px) {
+
+    .searchBar,
+    .notificationIcon,
+    .DashboardTitle,
+    .calander {
+        display: none !important;
+    }
+
+    .snallscreenlogo {
+        display: block;
+    }
+
+    .calandersm {
+        display: block !important;
+    }
+}
+
+.studentDetail {
+    background: #FAF1FF;
+    border: 1px solid #F2F2F2;
+    border-radius: 8px;
+    padding: 17px 22px;
+}
+
+.profile img {
+    width: 102px;
+    height: 102px;
+}
+
+.profile h5 {
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 26px;
+    margin-bottom: 8px;
+    color: #1F1F1F;
+}
+
+.profile p {
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 22px;
+    color: #1F1F1F;
+    margin: 0;
+
+}
+
+.exam p {
+    font-family: 'Archivo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 17px;
+    color: #1F1F1F;
+    margin: 0;
+    background: #C7E1FF;
+    border-radius: 2px;
+    padding: 6px 12px;
+}
